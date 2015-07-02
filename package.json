@@ -1,0 +1,21 @@
+{
+	"name":"burstMine-plugin-js",
+	"version":"1.0.0",
+	"description":"JavaScript components",
+	"author":{
+		"name":"Cryo",
+		"url":"https://github.com/bhamon"
+	},
+	"license":"MIT",
+	"repository":{
+		"type":"git",
+		"url":"https://github.com/bhamon/burstMine-plugin-js.git"
+	},
+	"bugs":{
+		"url":"https://github.com/bhamon/burstMine-plugin-js/issues"
+	},
+	"engines":{
+		"node":"~0.10"
+	},
+	"main":"lib/index.js"
+}

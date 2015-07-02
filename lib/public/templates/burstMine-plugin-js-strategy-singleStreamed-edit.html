@@ -1,0 +1,14 @@
+<alert ng-if="error" type="danger" close="clearError()">
+	<p>An error occured while loading resources.</p>
+	<p>
+		<span class="label label-danger">{{error.type}}</span>
+		{{error.message}}
+	</p>
+	<pre ng-if="error.details">{{error.details}}</pre>
+</alert>
+<ng-form name="formParams">
+	<div class="form-group" show-errors>
+		<label class="control-label">Generator preset</label>
+		<select name="generatorPreset" class="form-control" ng-model="data.generatorPreset" ng-options="generatorPreset.id as generatorPreset.name + ' (' + generatorPreset.description + ')' for generatorPreset in generatorPresets" required></select>
+	</div>
+</ng-form>
